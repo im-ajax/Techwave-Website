@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1A0B2E;
+    color: white;
+}
+/* font */
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+/* shared css */
+.btn{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    padding: 12.5px 16px;
+    background: linear-gradient(
+        45deg,
+        #FFD600 0%,
+        #FF4ECD 50%,
+        #7B2CFF 100%
+    );
+    border-radius: 30px;
+}
+.btn>i{
+    background-color: transparent;
+}
+/* header */
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 3px solid #3a1c5f;
+}
+header>section>div>h1>span{
+    
+}
+header > section > div> h1{
+    color: white;
+}
+header> section>div{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    gap: 15px;
+}
+.nav-bar>li{
+    list-style: none;
+}
+.nav-bar>li>a{
+    text-decoration: none;
+}
+/* main */
+/* sec-2 */
+.sec-2{
+    margin-top: 50px;
+    margin-bottom: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* footer */
