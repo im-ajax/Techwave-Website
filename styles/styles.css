@@ -20,7 +20,7 @@
     border: none;
     padding: 12.5px 16px;
     background: linear-gradient(
-        45deg,
+        30deg,
         #FFD600 0%,
         #FF4ECD 50%,
         #7B2CFF 100%
@@ -37,9 +37,7 @@
     max-width: 100%;
     margin: 0 auto;
     border-bottom: 3px solid #3a1c5f;
-}
-header>section>div>h1>span{
-    
+    margin-bottom: 50px;
 }
 header > section > div> h1{
     color: white;
@@ -51,6 +49,16 @@ header> section>div{
     justify-content: space-between;
     text-align: center;
     align-items: center;
+}
+header>section>div>h1>span{
+    background: linear-gradient(
+        30deg,
+        #FFD600 0%,
+        #FF4ECD 50%,
+        #7B2CFF 100%
+    );
+    background-clip: text;
+    color: transparent;
 }
 .nav-bar{
     display: flex;
@@ -71,4 +79,37 @@ header> section>div{
     margin: 0 auto;
     text-align: center;
 }
+.star{
+    color: #00FF88;
+}
+.sec-2-para{
+    border-bottom: 1px solid rgb(82, 82, 82);
+}
+.sec-2-qualities{
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.texts{
+    font-size: 14px;
+}
+
+.numbers{
+    color: #00FF88;
+    font-weight: 700;
+    font-size: 48px;
+}
+/* featured episodes part */
+.episodes{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
 /* footer */
+
+
