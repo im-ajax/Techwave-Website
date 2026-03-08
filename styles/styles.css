@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1A0B2E;
     color: white;
+}
+body{
+    background-color: #1A0B2E;
 }
 /* font */
 .inter{
@@ -13,9 +15,12 @@
     color: white;
 }
 /* shared css */
+.text-bg{
+    background-color: #24113b;
+}
 .btn{
     cursor: pointer;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     border: none;
     padding: 12.5px 16px;
@@ -26,7 +31,39 @@
         #7B2CFF 100%
     );
     border-radius: 30px;
+    transition: box-shadow 0.4s ease;
+    display: flex;
+    gap: 8px;
 }
+.btn:hover{
+    box-shadow: 0px 0px 40px yellow;
+}
+.featured > div> h1,
+.host-title,
+.choose>h1{
+    margin-top: 90px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.choose-icons{
+    font-size: 40px;
+    background: linear-gradient(
+        30deg,
+        #FFD600 30%,
+        #FF4ECD 50%,
+        #7B2CFF 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* main */
 .btn>i{
     background-color: transparent;
 }
@@ -43,14 +80,15 @@ header > section > div> h1{
     color: white;
 }
 header> section>div{
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
 }
-header>section>div>h1>span{
+header>section>div>h1>span,
+.footer-head{
     background: linear-gradient(
         30deg,
         #FFD600 0%,
@@ -71,10 +109,54 @@ header>section>div>h1>span{
     text-decoration: none;
 }
 /* main */
+/* section-1 */
+.section-1{
+    background-image: url('../assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 760px;
+    margin-bottom: 90px;
+
+}
+.btn-2{
+    border: 1px solid #00FF88;
+    border-radius: 22px;
+    background-color: transparent;
+    color: #00FF88;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12.5px 16px;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.btn-2 i{
+    color: #00FF88;
+    transition: color 0.4s ease;
+}
+.btn-2:hover{
+    background-color: #00FF88;
+    color: black;
+    box-shadow: 0px 0px 13px #00FF88;
+}
+.btn-2:hover i{
+    color: black;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
 /* sec-2 */
 .sec-2{
     margin-top: 50px;
-    margin-bottom: 120px;
+    padding-bottom: 80px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -88,7 +170,7 @@ header>section>div>h1>span{
 .sec-2-qualities{
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -103,13 +185,170 @@ header>section>div>h1>span{
     font-weight: 700;
     font-size: 48px;
 }
-/* featured episodes part */
-.episodes{
-    max-width: 1140px;
+/* choose part */
+
+.choose{
+    padding-top: 20px;
+    max-width: 100%;
+    height: 1121px;
+    background-color: #24113b;
+}
+.blocks{
+    max-width: 1200px;
     margin: 0 auto;
-    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas:
+        "box-1 box-2 box-2"
+        "box-1 box-3 box-3"
+        "box-4 box-4 box-5";
+}
+.box-1{
+    grid-area: box-1;
+}
+.box-2{
+    grid-area: box-2;
+}
+.box-3{
+    grid-area: box-3;
+}
+.box-4{
+    grid-area: box-4;
+}
+.box-5{
+    grid-area: box-5;
+}
+.choose>h1{
+    margin-bottom: 30px;
+}
+.box-1{
+    background-color:#3a1c5f;
+    border-radius: 30px;
+    padding: 108px 40px;
+    transition: box-shadow 0.4s ease;
+}
+.box-1:hover{
+    box-shadow:0px 0px 13px #FFD600;
+}
+.box-2,
+.box-3,
+.box-4,
+.box-5{
+    background-color:#3a1c5f;
+    /* border: 1px solid white; */
+    border-radius: 30px;
+    padding: 40px;
+    transition: box-shadow 0.4s ease;
+}
+.box-2:hover,
+.box-3:hover,
+.box-4:hover,
+.box-5:hover{
+    box-shadow:0px 0px 20px #FFD600;
+}
+.box-heads{
+    font-size: 28px;
+}
+/* featured */
+.featured{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.episodes{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+iframe{
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+.cards{
+    background-color: #24113b;
+    height: 490px;
+    width: 380px;
+    border-radius: 22px;
+    transition: box-shadow 0.4s ease;
+}
+.cards:hover{
+    box-shadow: 0px 0px 22px #FFD600;
+}
+.cards-text{
+    padding: 24px;
+}
+.timer {
+    color: #00FF88;
+}
+.timer i{
+    color: #00FF88;
+}
+/* host-part */
+.host{
+    width: 1200px;
+    margin: 0 auto;
+    height: 280px;
+    background-color: #24113b;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.links i{
+    font-size: 25px;
+    background: linear-gradient(
+        30deg,
+        #FFD600 0%,
+        #FF4ECD 50%,
+        #7B2CFF 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+/* footer */
+footer{
+    background-image: url('../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 412px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logos{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.footer-texts{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
     text-align: center;
 }
-/* footer */
-
-
+footer>div>h1{
+    font-size: 55px;
+}
+.footer-last-text{
+    font-size: 12px;
+}
+.footer-logos p{
+    font-size: 14px;
+}
