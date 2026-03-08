@@ -73,7 +73,7 @@ body{
     font-size: 13px;
     font-weight: 700;
     border: none;
-    padding: 12.5px 16px;
+    padding: 12.5px 13px;
     background: linear-gradient(
         30deg,
         #FFD600 0%,
@@ -408,7 +408,6 @@ footer>div>h1{
 .footer-logos p{
     font-size: 14px;
 }
-
 @media screen and (max-width:576px){
     .nav{
         padding-left: 20px;
